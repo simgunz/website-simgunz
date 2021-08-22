@@ -1,0 +1,112 @@
+:root {
+  @extend .mode-light;
+
+  --mode: none;
+  --hbs-font-size: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --mode: dark;
+  }
+
+  :root:not(.mode-dark) {
+    @include mode-dark;
+  }
+}
+
+html {
+  position: relative;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--hbs-background);
+  color: var(--hbs-on-background);
+  display: flex;
+  flex-flow: column;
+  font-family: var(--bs-font-sans-serif);
+  font-size: var(--hbs-font-size);
+}
+
+a {
+  text-decoration: none;
+  color: var(--hbs-primary-tex);
+
+  &:hover {
+    color: var(--hbs-accent);
+  }
+}
+
+.btn {
+  background-color: var(--hbs-accent);
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2rem 0 1.5rem;
+  clear: both;
+}
+
+table {
+  @extend .table;
+  @extend .table-bordered;
+
+  color: var(--color);
+}
+
+main {
+  margin-bottom: 2rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+::marker {
+  color: var(--hbs-accent);
+}
+
+hr {
+  color: var(--hbs-accent);
+}
+
+.surface {
+  background-color: var(--hbs-surface);
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem var(--hbs-shadow);
+  color: var(--hbs-on-surface);
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.list-group-item {
+  .active {
+    background-color: var(--hbs-accent);
+    border: var(--hbs-accent);
+  }
+}
+
+.fa-fw {
+  margin-right: 0.25rem;
+}
+
+.setting {
+  margin-bottom: 1rem;
+}
+
+.white-space-pre-wrap {
+  white-space: pre-wrap;
+}

@@ -1,0 +1,61 @@
+.highlight-wrapper {
+  position: relative;
+  margin: 1.5rem auto 1rem;
+
+  .lang {
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0.75rem;
+    font-style: italic;
+    opacity: 0.5;
+    padding: 0.25rem 0.75rem 0.25rem 0.5rem;
+    text-transform: uppercase;
+  }
+
+  .panel {
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+    padding: 0 0.5rem;
+    margin-bottom: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+    .action {
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+
+      &.active {
+        color: var(--hbs-accent);
+      }
+    }
+  }
+
+  &:hover {
+    .panel {
+      opacity: 1;
+    }
+  }
+}
+
+pre {
+  background: var(--hbs-background);
+  border-radius: 0.25rem;
+  color: var(--hbs-on-background);
+  padding: 1rem;
+  position: relative;
+}
+
+code {
+  color: var(--hbs-accent);
+  font-weight: bold;
+
+  &.no-ln {
+    .ln {
+      display: none;
+    }
+  }
+}
