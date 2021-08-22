@@ -1,0 +1,40 @@
+.profile {
+  color: var(--hbs-secondary-text);
+
+  .profile-avatar {
+    max-width: 120px;
+  }
+
+  .profile-meta {
+    margin-top: 0.5rem;
+
+    * {
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  .profile-name {
+    font-weight: bold;
+  }
+
+  .profile-company,
+  .profile-about,
+  .profile-location {
+    display: inline;
+    margin-right: 0.5rem;
+    white-space: pre;
+  }
+}
+
+.profile-compact {
+  .profile-avatar {
+    max-width: 100%;
+    border-radius: 0 !important;
+  }
+
+  .profile-company,
+  .profile-about,
+  .profile-location {
+    display: block;
+  }
+}

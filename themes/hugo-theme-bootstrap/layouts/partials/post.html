@@ -1,0 +1,17 @@
+<article class="post row surface">
+  {{- partial "post/panel" . -}}
+  <h1 class="post-title my-3">{{ partial "helpers/title" . }}</h1>
+  {{- partial "post/meta" . -}}
+  {{- partial "hooks/content-begin" . -}}
+  {{- partial "post/share" . -}}
+  {{- partial "post/toc" . -}}
+  <div class="post-content mb-3">
+    {{- .Content -}}
+  </div>
+  {{- partial "post/reward" . -}}
+  {{- partial "hooks/content-end" . -}}
+    <hr />
+  {{- partial "post/nav" . -}}
+  {{- partial "post/related-posts" . -}}
+</article>
+{{- partial "post/comments" . -}}
