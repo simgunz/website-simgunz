@@ -1,28 +1,17 @@
 +++
 title = "About"
 description = "Hugo, the world's fastest framework for building websites"
-date = "2019-02-28"
-aliases = ["about-us", "about-hugo", "contact"]
-author = "Hugo Authors"
-reward = false
+date = "2021-08-22"
+aliases = ["about-us",  "contact"]
+author = "Simone Gaiarin"
 postDate = false
 readingTime = false
 +++
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+My name is Simone Gaiarin, and I am a post-doc in optical communications engineering. I am a open-source enthusiast and a free-time programmer. I started using GNU/Linux in 2006 and quickly began to enjoy it. In time, I began to hack around with the system, writing scripts and finally I begin to program non-hello-world software. Now I contribute to the KDE project. I also have many computer unrelated interests, such as reading, hiking, traveling, experimenting, and in general I am always looking to learn new things and try new experiences.
 
-Hugo makes use of a variety of open source projects including:
+## The site
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+I have created this site mainly to provide a showcase of my projects, and receive feedback and new ideas about them in the hope to improve them.
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
-
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+Moreover, this site is a space where I can pour all my thoughts about Linux and related things. In particular, I would like to share the solutions to the problems I face when I program. Sometimes I have spent days to solve really weird problems or to understand tricky internal mechanisms of KDE. Writing about them would be a good opportunity to help other newbie programmers like me to save time and to not get too frustrated while programming.
