@@ -11,7 +11,7 @@ tags:
   - anki-add-ons
 
 ---
-Here&#8217;s another Anki add-on I&#8217;ve implemented recently. This add-on allows users to reposition new cards (changing the due field) in a fast way from the browser view, without using the reposition tool, which I&#8217;ve always found a little cumbersome.<!--more-->
+Here's another Anki add-on I've implemented recently. This add-on allows users to reposition new cards (changing the due field) in a fast way from the browser view, without using the reposition tool, which I've always found a little cumbersome.<!--more-->
 
 To use this add-on, sort the cards in the browser by due date. At this point two new buttons appear on the right side of the toolbar and can be used to move cards up and down.
 

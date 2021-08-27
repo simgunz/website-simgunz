@@ -17,7 +17,7 @@ One feature that has been added is the support for a global shortcut to toggle r
 
 Other changes:
 
-  * RedshiftApplet: Improve plasmoid status behavior (when switching to manual mode the widget icon won&#8217;t move before few seconds to allow to user to end its interaction)
+  * RedshiftApplet: Improve plasmoid status behavior (when switching to manual mode the widget icon won't move before few seconds to allow to user to end its interaction)
   * RedshiftApplet: Add global shortcut to toggle redshift on/off
   * Translations: Add Czech translation (thanks to Pavel Fric)
   * Translations: Add Spanish translation (thanks to ThecaTTony)

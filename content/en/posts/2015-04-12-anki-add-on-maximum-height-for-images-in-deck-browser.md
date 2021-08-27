@@ -11,11 +11,11 @@ tags:
   - anki-add-ons
 
 ---
-Today I was working on a deck when finally I&#8217;ve decided to solve an annoying problem who was nagging me since long time.
+Today I was working on a deck when finally I've decided to solve an annoying problem who was nagging me since long time.
 
-The problem is that in the the Anki card editor the images are displayed at full size, so that if the card has many fields it&#8217;s not possible to see them all at a glance, but it&#8217;s necessary to scroll in order to look at the ones at the bottom.
+The problem is that in the the Anki card editor the images are displayed at full size, so that if the card has many fields it's not possible to see them all at a glance, but it's necessary to scroll in order to look at the ones at the bottom.
 
-<!--more-->So I&#8217;ve written a simple add-on which allows users to set a maximum height for the images displayed in the Anki card editor. The results is displayed in the following two images.
+<!--more-->So I've written a simple add-on which allows users to set a maximum height for the images displayed in the Anki card editor. The results is displayed in the following two images.
 
 You can download it in the anki [shared add-ons page][1].
 
