@@ -11,7 +11,7 @@ tags:
   - kde
 
 ---
-As is written in the project page of Activity Manager, &#8220;I’m currently rewriting it from scratch in QML to improve it and to add some missing features, like the ability to add a new activity from template&#8221;. Actually, after trying different way to interact with the KDE activities I&#8217;m stuck.
+As is written in the project page of Activity Manager, &#8220;I'm currently rewriting it from scratch in QML to improve it and to add some missing features, like the ability to add a new activity from template&#8221;. Actually, after trying different way to interact with the KDE activities I&#8217;m stuck.
 
 <!--more-->Even though KDE allow to interact with the activities system in an easy way through the org.kde.activities dataengine or through dbus, it doesn&#8217;t expose all the classes needed to write a full featured activity manager. In particular it is not possible to create new activity from template. The KActivityController class, that is the one that allow a full control over the activities, is not public.
 

@@ -77,7 +77,7 @@ If you would like to see this feature implemented in Forvo ask the Forvo develo
 
 One user pointed out that for languages like Chinese and Japanese there are some other problems, which need to be addressed as well.
 
-_&#8220;I’m trying Mandarin Chinese via FF, and there’s a bit more to do – compounded by having to get the characters with correct stroke order (needing more mnemonics to help the brain cells), plus the fact that G-Images for Chinese has a strong tendency to return images of women wearing few clothes, regardless of the input!!&#8221;_
+_&#8220;I'm trying Mandarin Chinese via FF, and there's a bit more to do – compounded by having to get the characters with correct stroke order (needing more mnemonics to help the brain cells), plus the fact that G-Images for Chinese has a strong tendency to return images of women wearing few clothes, regardless of the input!!&#8221;_
 
 ## Other possible features
 
