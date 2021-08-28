@@ -5,12 +5,10 @@ date: 2015-07-15T21:55:17+00:00
 images:
   - /images/ff-anki.png
 categories:
-  - Anki
   - Projects
 tags:
   - anki
   - fluent-forever
-
 ---
 In the last months I've been working on the implementation of the Fluent Forever anki add-on, which I first introduced as a mock up in a [previous post][1]. The work has progressed, and now I have a working version with some features, here listed.<!--more-->
 
@@ -36,7 +34,7 @@ In the last months I've been working on the implementation of the Fluent Forever
 
 Here a demonstration of the plugin in action, as is, just to give an idea of the state of the development (even tough most of the stuff that have been done are under the hood).
 
-
+{{< youtube _BLhlh0zb4A >}}
 
 ## Problems to be addressed
 
@@ -49,4 +47,5 @@ Another big problem I've found regards Forvo API license. In particular the lice
 
 Finally I want to specify that, currently I'm manly focusing on European languages, so I'm not dealing with languages which employs symbols like Chinese, which require special care. I'll address these kind of languages as soon as I have all the basic features implemented.
 
- [1]: http://simgunz.org/fluent-forever-vocabulary-deck-builder-for-anki/
+ [1]: /posts/2015-04-25-fluent-forever-vocabulary-deck-builder-for-anki
+ [2]: https://invokeit.wordpress.com/frequency-word-lists

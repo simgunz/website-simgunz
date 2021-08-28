@@ -4,12 +4,9 @@ author: Simone Gaiarin
 date: 2015-04-25T10:30:43+00:00
 images:
   - /images/ff-anki.png
-categories:
-  - Anki
 tags:
   - anki
   - fluent-forever
-
 ---
 In a [previous post][1] I've discussed about two problems of the Fluent Forever method. Here I present the idea I had to try to solve the second one, i.e., how to build vocabulary decks in a faster way.
 
@@ -75,9 +72,9 @@ If you would like to see this feature implemented in Forvo ask the Forvo develo
 
 ### Other issues
 
-One user pointed out that for languages like Chinese and Japanese there are some other problems, which need to be addressed as well.
+One user pointed out that for languages like Chinese and Japanese there are some other problems, which need to be addressed as well:
 
-_"I'm trying Mandarin Chinese via FF, and there's a bit more to do – compounded by having to get the characters with correct stroke order (needing more mnemonics to help the brain cells), plus the fact that G-Images for Chinese has a strong tendency to return images of women wearing few clothes, regardless of the input!!"_
+> "I'm trying Mandarin Chinese via FF, and there's a bit more to do – compounded by having to get the characters with correct stroke order (needing more mnemonics to help the brain cells), plus the fact that G-Images for Chinese has a strong tendency to return images of women wearing few clothes, regardless of the input!!"
 
 ## Other possible features
 
@@ -88,17 +85,13 @@ _"I'm trying Mandarin Chinese via FF, and there's a bit more to do – compounde
 
 With this post I've provided an overview of my ideas on the add-on implementation. Now I want to hear what you think about it, if you consider it useful, which features can be added, what problems should be addressed and so on, so that we can make a further step in the simplification of the hard task of learning a new language.
 
-## 
-
 ## Appendix: Card creation workflows comparison {#appendix}
 
-&nbsp;
-
-
+{{< youtube 714nh-gg140 >}}
 
 &nbsp;
 
+{{< youtube hlKeHOViOaU >}}
 
-
- [1]: http://simgunz.org/fluent-forever-two-possible-improvements/#twoproblems "Fluent Forever: two possible improvements"
+ [1]: /posts/2015-04-09-fluent-forever-two-possible-improvements
  [2]: #appendix

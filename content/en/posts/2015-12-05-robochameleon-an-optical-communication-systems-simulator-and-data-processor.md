@@ -19,3 +19,4 @@ If you want to know more about it, check out the github page at:
 <http://dtu-dsp.github.io/Robochameleon/>
 
  [1]: http://dtu-dsp.github.io/Robochameleon/
+ [2]: https://www.fotonik.dtu.dk/english/Research-groups/High-Speed-Optical-Communications

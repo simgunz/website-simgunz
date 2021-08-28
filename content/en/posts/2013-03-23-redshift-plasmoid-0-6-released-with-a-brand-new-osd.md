@@ -5,7 +5,6 @@ date: 2013-03-23T09:47:56+00:00
 images:
   - /images/redshift-scr-osd.png
 categories:
-  - KDE
   - Projects
 tags:
   - kde

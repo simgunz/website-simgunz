@@ -5,11 +5,9 @@ date: 2014-08-02T11:56:25+00:00
 images:
   - /images/redshift_large_shortcut.png
 categories:
-  - KDE
   - Projects
 tags:
   - kde
-
 ---
 In this release the code has been cleaned and commented with doxygen style comments, the files hierarchy has been changed to make everything more clear, the README has been updated and ported to markdown syntax. Because of all this changes the code is now supposed to be easily maintainable.<!--more-->
 

@@ -5,7 +5,6 @@ date: 2017-09-18T13:19:28+00:00
 images:
   - images/ff-anki-alpha.png
 categories:
-  - Anki
   - Projects
 tags:
   - anki
@@ -38,3 +37,4 @@ An Anki template deck is provided together with the plugin to minimize the effor
 
 ## Code
 
+https://github.com/simgunz/anki-addons_fluent-forever-vocabulary-deck-builder
