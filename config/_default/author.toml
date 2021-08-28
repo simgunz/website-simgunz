@@ -1,6 +1,6 @@
 name = "Simone Gaiarin"
 # avatar = "images/profile.png" # Avatar image. Default to "images/profile.webp".
-bio = "Telecommunication Engineer, Software Developer, Linux Enthusiast"
+bio = "Telecommunication Engineer, Software Developer, Open-Source Enthusiast"
 company = "7Pixel"
 location = "Padova, Italy"
 # about = "https://domain.tld" # The external about page. The internal about page will be used if not set.
