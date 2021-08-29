@@ -4,3 +4,10 @@
 
 [build.environment]
   HUGO_VERSION = "0.87.0"
+
+[[plugins]]
+  # Installs the Lighthouse Build Plugin for all deploy contexts
+  package = "@netlify/plugin-lighthouse"
+
+[context.branch-deploy]
+  command = "hugo --minify --baseURL $DEPLOY_PRIME_URL"
