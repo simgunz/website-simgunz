@@ -30,7 +30,7 @@ At this point you need to assembly all the pieces. Place the Neo X7 over the squ
 
 Now it's time to mount the VESA support to the TV. Insert a bolt in the hole of the plastic sheet, than add the washer (or the Samsung TV black stuff as in my case) and than the nut. T<span id="result_box" class="short_text" lang="en"><span class="hps">ighten the nut in order to fix it to the plastic sheet, but let the bolt turn. Now screw the bolt to the bottom  in the TV hole, and finally tighten the nut. If the bolt is of the correct size, there should be an interspace between the TV and the VESA mount to let the air flow in order to cool down the Neo X7.</span></span>
 
-![Vesa](/images/neo-x7-vesa-bolt-detail.jpg)
+![Vesa](/images/neo-x7-vesa-bolt-detail.jpg#center)
 
 Finally, in the picture you can see how the VESA mount looks after the installation on the TV. At this point you can connect all the cables and everything will be hweidden behind the TV.
 

@@ -17,6 +17,6 @@ To use this add-on, sort the cards in the browser by due date. At this point two
 
 You can download it in the anki [shared add-ons page][1]
 
-![Fast card reposition addon screenshot](/images/anki-fast-reposition-screen.png)
+![Fast card reposition addon screenshot](/images/anki-fast-reposition-screen.jpg)
 
 [1]: https://ankiweb.net/shared/info/544982740

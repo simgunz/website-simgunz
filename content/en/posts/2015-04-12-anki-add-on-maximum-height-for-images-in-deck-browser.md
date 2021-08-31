@@ -16,10 +16,10 @@ So I've written a simple add-on which allows users to set a maximum height for 
 
 You can download it in the anki [shared add-ons page][1].
 
-![Bad maximum image height](/images/anki-maxheight-bad.png)
+![Bad maximum image height](/images/anki-maxheight-bad.jpg)
 Without limiting the images height not all the fields content is visible.
 
-![Good maximum image height](/images/anki-maxheight-good.png)
+![Good maximum image height](/images/anki-maxheight-good.jpg)
 Using the add-on we can see all the fields content at a glance.
 
 [1]: https://ankiweb.net/shared/info/229181581
