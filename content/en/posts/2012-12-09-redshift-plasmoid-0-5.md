@@ -3,7 +3,7 @@ title: Redshift plasmoid 0.5 released
 author: Simone Gaiarin
 date: 2012-12-09T09:26:09+00:00
 images:
-  - /images/redshift_large.png
+  - /images/feature/redshift_large.jpg
 categories:
   - Projects
 tags:

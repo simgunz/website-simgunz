@@ -3,7 +3,7 @@ title: Support Openwords kickstarter campaign
 author: Simone Gaiarin
 date: 2015-05-05T15:52:35+00:00
 images:
-  - /images/openwords.png
+  - /images/feature/openwords.jpg
 categories:
   - General
 ---

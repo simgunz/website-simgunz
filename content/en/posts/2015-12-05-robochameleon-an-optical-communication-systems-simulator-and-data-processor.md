@@ -3,7 +3,7 @@ title: 'Robochameleon: an optical communication systems simulator and data proce
 author: Simone Gaiarin
 date: 2015-12-05T14:21:14+00:00
 images:
-  - /images/robochameleon.jpg
+  - /images/feature/robochameleon.jpg
 categories:
   - General
 

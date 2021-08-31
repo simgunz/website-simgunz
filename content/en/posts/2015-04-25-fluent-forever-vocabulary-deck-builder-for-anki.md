@@ -3,7 +3,7 @@ title: Fluent Forever vocabulary deck builder for Anki
 author: Simone Gaiarin
 date: 2015-04-25T10:30:43+00:00
 images:
-  - /images/ff-anki.png
+  - /images/feature/ff-anki.jpg
 tags:
   - anki
   - fluent-forever

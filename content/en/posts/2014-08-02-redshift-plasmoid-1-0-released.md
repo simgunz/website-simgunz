@@ -3,7 +3,7 @@ title: Redshift plasmoid 1.0 released
 author: Simone Gaiarin
 date: 2014-08-02T11:56:25+00:00
 images:
-  - /images/redshift_large_shortcut.png
+  - /images/feature/redshift_large_shortcut.jpg
 categories:
   - Projects
 tags:

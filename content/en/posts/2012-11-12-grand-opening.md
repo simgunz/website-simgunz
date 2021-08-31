@@ -3,7 +3,7 @@ title: Grand opening
 author: Simone Gaiarin
 date: 2012-11-12T20:27:36+00:00
 images:
-  - /images/grand-opening.jpg
+  - /images/feature/grand-opening.jpg
 categories:
   - General
 

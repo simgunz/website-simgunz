@@ -3,7 +3,7 @@ title: Redshift plasmoid 0.6 released with a brand new OSD
 author: Simone Gaiarin
 date: 2013-03-23T09:47:56+00:00
 images:
-  - /images/redshift-scr-osd.png
+  - /images/feature/redshift-scr-osd.jpg
 categories:
   - Projects
 tags:

@@ -3,7 +3,7 @@ title: On the state of Activity Manager
 author: Simone Gaiarin
 date: 2014-10-03T08:06:58+00:00
 images:
-  - /images/activities_wide.png
+  - /images/feature/activities_wide.jpg
 categories:
   - Projects
 tags:

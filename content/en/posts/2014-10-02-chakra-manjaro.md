@@ -3,7 +3,7 @@ title: From Chakra to Manjaro
 author: Simone Gaiarin
 date: 2014-10-02T16:42:59+00:00
 images:
-  - /images/manjaro_logo.png
+  - /images/feature/manjaro_logo.jpg
 categories:
   - General
 ---

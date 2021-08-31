@@ -3,7 +3,7 @@ title: Persistent Okular review tools
 author: Simone Gaiarin
 date: 2013-03-30T08:53:27+00:00
 images:
-  - /images/okular.png
+  - /images/feature/okular.jpg
 categories:
   - HowTo
 tags:

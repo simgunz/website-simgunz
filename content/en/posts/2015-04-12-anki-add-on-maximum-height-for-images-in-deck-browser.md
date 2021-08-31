@@ -3,7 +3,7 @@ title: 'Anki add-on: Maximum height for images in deck browser'
 author: Simone Gaiarin
 date: 2015-04-12T15:02:35+00:00
 images:
-  - /images/giraffe-face.jpg
+  - /images/feature/giraffe-face.jpg
 tags:
   - anki
   - anki-add-ons

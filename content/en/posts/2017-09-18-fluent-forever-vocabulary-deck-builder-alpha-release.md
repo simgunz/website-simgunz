@@ -3,7 +3,7 @@ title: Fluent Forever vocabulary deck builder pre-alpha release
 author: Simone Gaiarin
 date: 2017-09-18T13:19:28+00:00
 images:
-  - images/ff-anki-alpha.png
+  - /images/feature/ff-anki-alpha.jpg
 categories:
   - Projects
 tags:

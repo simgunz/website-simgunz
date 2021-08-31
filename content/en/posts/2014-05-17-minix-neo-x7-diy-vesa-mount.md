@@ -3,7 +3,7 @@ title: Minix Neo X7 DIY VESA mount
 author: Simone Gaiarin
 date: 2014-05-17T12:18:48+00:00
 images:
-  - /images/neo-x7-vesa-assembled.jpg
+  - /images/feature/neo-x7-vesa-assembled.jpg
 categories:
   - HowTo
 ---

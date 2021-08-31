@@ -3,7 +3,7 @@ title: KTouch lessons generator
 author: Simone Gaiarin
 date: 2015-07-12T14:30:09+00:00
 images:
-  - /images/ktouch.png
+  - /images/feature/ktouch.jpg
 tags:
   - kde
 ---

@@ -3,7 +3,7 @@ title: Support Openwords indiegogo campaign
 author: Simone Gaiarin
 date: 2017-01-28T11:13:27+00:00
 images:
-  - /images/openwords.png
+  - /images/feature/openwords.jpg
 categories:
   - General
 ---

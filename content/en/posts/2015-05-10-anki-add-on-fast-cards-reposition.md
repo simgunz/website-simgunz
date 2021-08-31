@@ -3,7 +3,7 @@ title: 'Anki add-on: Fast cards reposition'
 author: Simone Gaiarin
 date: 2015-05-10T12:41:08+00:00
 images:
-  - /images/up-down.png
+  - /images/feature/up-down.jpg
 categories:
   - Anki
 tags:

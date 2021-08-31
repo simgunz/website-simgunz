@@ -3,7 +3,7 @@ title: 'Fluent Forever: two possible improvements'
 author: Simone Gaiarin
 date: 2015-04-09T06:33:15+00:00
 images:
-  - /images/languages-bubble.png
+  - /images/feature/languages-bubble.jpg
 tags:
   - anki
   - fluent-forever

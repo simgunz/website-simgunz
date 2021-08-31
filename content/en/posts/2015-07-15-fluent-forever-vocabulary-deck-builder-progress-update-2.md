@@ -3,7 +3,7 @@ title: Fluent Forever vocabulary deck builder progress update
 author: Simone Gaiarin
 date: 2015-07-15T21:55:17+00:00
 images:
-  - /images/ff-anki.png
+  - /images/feature/ff-anki.jpg
 categories:
   - Projects
 tags:

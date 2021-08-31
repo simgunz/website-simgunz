@@ -3,7 +3,7 @@ title: Redshift Control for Plasma 5
 author: Simone Gaiarin
 date: 2015-07-27T20:06:40+00:00
 images:
-  - /images/redshift_large.png
+  - /images/feature/redshift_large.jpg
 categories:
   - Projects
 tags:
