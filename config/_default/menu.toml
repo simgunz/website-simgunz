@@ -1,0 +1,10 @@
+[[main]]
+  name = "Projects"
+  identifier = "projects"
+  pre = '<i class="fas fa-fw fa-chevron-circle-down"></i>'
+  weight = 40
+[[main]]
+  id = "anki-addons"
+  parent = "projects"
+  name = "Anki Add-ons"
+  pre = '<i class="fab fa-fw fa-github"></i>'
