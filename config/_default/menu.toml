@@ -5,20 +5,20 @@
   weight = 40
 
 [[main]]
-  id = "anki-addons"
-  parent = "projects"
-  name = "Anki Add-ons"
-  pre = '<div class="dropdown-item-inner"><img src="/images/project-icons/anki.svg"></img>'
-  post = '</div>'
-  url = 'https://ankiweb.net/shared/byauthor/544982740'
-
-[[main]]
   id = "redshift-plasmoid"
   parent = "projects"
   name = "Redshift Plasmoid"
   pre = '<div class="dropdown-item-inner"><img src="/images/project-icons/anki.svg"></img>'
   post = '</div>'
   url = 'projects/redshift-plasmoid'
+
+[[main]]
+  id = "anki-addons"
+  parent = "projects"
+  name = "Anki Add-ons"
+  pre = '<div class="dropdown-item-inner"><img src="/images/project-icons/anki.svg"></img>'
+  post = '</div>'
+  url = 'https://ankiweb.net/shared/byauthor/544982740'
 
 [[main]]
   id = 'userscripts'
