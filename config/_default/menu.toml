@@ -17,3 +17,11 @@
   pre = '<div class="dropdown-item-inner"><img src="/images/project-icons/anki.svg"></img>'
   post = '</div>'
   url = 'projects/redshift-plasmoid'
+
+[[main]]
+  id = 'userscripts'
+  parent = 'projects'
+  name = 'Userscripts'
+  pre = '<div class="dropdown-item-inner"><img src="/images/project-icons/tampermonkey.svg"></img>'
+  post = '</div>'
+  url = 'https://github.com/simgunz/userscripts'
