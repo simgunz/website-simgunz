@@ -8,7 +8,9 @@
   id = "anki-addons"
   parent = "projects"
   name = "Anki Add-ons"
-  pre = '<i class="fab fa-fw fa-github"></i>'
+  pre = '<div class="dropdown-item-inner"><img src="/images/project-icons/anki.svg"></img>'
+  post = '</div>'
+  url = 'https://ankiweb.net/shared/byauthor/544982740'
 
 [[main]]
   id = "redshift-plasmoid"
