@@ -27,3 +27,11 @@
   pre = '<div class="dropdown-item-inner"><img src="/images/project-icons/tampermonkey.svg"></img>'
   post = '</div>'
   url = 'https://github.com/simgunz/userscripts'
+
+[[main]]
+  id = 'legacy-projects'
+  parent = 'projects'
+  name = 'Legacy Projects'
+  pre = '<div class="dropdown-item-inner"><img src="/images/project-icons/rip.svg"></img>'
+  post = '</div>'
+  url = 'projects/legacy-projects'
