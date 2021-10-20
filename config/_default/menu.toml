@@ -3,8 +3,17 @@
   identifier = "projects"
   pre = '<i class="fas fa-fw fa-chevron-circle-down"></i>'
   weight = 40
+
 [[main]]
   id = "anki-addons"
   parent = "projects"
   name = "Anki Add-ons"
   pre = '<i class="fab fa-fw fa-github"></i>'
+
+[[main]]
+  id = "redshift-plasmoid"
+  parent = "projects"
+  name = "Redshift Plasmoid"
+  pre = '<div style="height: 100%; vertical-align: center"><img style="width: 1.25em; margin-right: 0.25em" src="/images/project-icons/anki.svg"></img>'
+  post = '</div>'
+  url = 'projects/redshift-plasmoid'
