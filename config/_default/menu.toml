@@ -8,7 +8,7 @@
   id = "redshift-plasmoid"
   parent = "projects"
   name = "Redshift Plasmoid"
-  pre = '<div class="dropdown-item-inner"><img src="/images/project-icons/anki.svg"></img>'
+  pre = '<div class="dropdown-item-inner"><img src="/images/project-icons/redshift.png"></img>'
   post = '</div>'
   url = 'projects/redshift-plasmoid'
 
