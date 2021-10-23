@@ -8,3 +8,8 @@
   name = "Github"
   url = "https://github.com/razonyang/hugo-theme-bootstrap"
   pre = '<i class="fab fa-fw fa-github"></i>'
+[[main]]
+  id = "manual"
+  parent = "dropdown"
+  name = "Manual"
+  url = "en/series/manual"

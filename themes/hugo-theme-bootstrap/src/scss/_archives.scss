@@ -1,10 +1,24 @@
 .archive {
-  ul {
-    padding-left: 2rem;
+  margin-bottom: 2rem;
+
+  .archive-title {
+    margin: 1rem 0;
   }
 
-  .post-title,
-  .post-date {
-    color: var(--hbs-secondary-text);
+  .post-title {
+    color: variable('secondary-text-on-surface');
+
+    &:hover {
+      color: variable('accent');
+    }
   }
+
+  .post-date {
+    color: variable('secondary-text-on-surface');
+  }
+}
+
+.archive-posts {
+  list-style: none;
+  padding-left: 0.25rem;
 }

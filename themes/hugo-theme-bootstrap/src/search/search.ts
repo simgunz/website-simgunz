@@ -1,5 +1,5 @@
 import Fuse from 'fuse.js';
-import * as Mustache from 'mustache';
+import Mustache from 'mustache';
 import * as Mark from 'mark.js';
 
 declare global {
@@ -35,6 +35,8 @@ export class Search {
   public tmplResult: string;
 
   public input: HTMLInputElement;
+
+  public searchBarInput: HTMLInputElement;
 
   public title: string;
 
@@ -97,17 +99,21 @@ export class Search {
 
   initForm() {
     this.input = this.form.querySelector('input[name="q"]');
+    this.searchBarInput = document.querySelector('.search-bar input[name="q"]');
     if (this.input.value === '') {
       this.input.value = Search.getKeywordFromURL();
     }
+    this.searchBarInput.value = this.input.value;
+    document.querySelector('.search-bar input');
     const instance = this;
     this.form.addEventListener('submit', (event) => {
-      Search.handleSubmit(event, instance);
+      instance.handleSubmit(event);
     });
   }
 
-  static handleSubmit(event, instance: Search) {
-    instance.search(instance.input.value);
+  handleSubmit(event) {
+    this.search(this.input.value);
+    this.searchBarInput.value = this.input.value;
     event.preventDefault();
   }
 
@@ -208,6 +214,7 @@ export class Search {
         title: result.item.title,
         content,
         id,
+        img: result.item.img,
         permalink: result.item.permalink,
         categories: result.item.categories,
         tags: result.item.tags,
@@ -231,7 +238,7 @@ export class Search {
   }
 
   static formatScore(value) {
-    return (100 * (1 - value)).toFixed(2);
+    return (100 * (1 - value)).toFixed(1);
   }
 
   highlight(id, titleKeywords, contentKeywords) {

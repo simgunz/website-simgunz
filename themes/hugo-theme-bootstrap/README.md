@@ -10,9 +10,9 @@ An extreme fast, responsive and feature-rich blog theme for Hugo.
 
 ![Screenshot](https://raw.githubusercontent.com/razonyang/hugo-theme-bootstrap/master/images/screenshot.png)
 
-**Dark Mode**
+**Light Mode**
 
-![Screenshot in Dark Mode](https://raw.githubusercontent.com/razonyang/hugo-theme-bootstrap/master/images/screenshot-dark.png)
+![Screenshot in Light Mode](https://raw.githubusercontent.com/razonyang/hugo-theme-bootstrap/master/images/screenshot-light.png)
 
 ## Live Preview
 
@@ -22,7 +22,7 @@ There is also a [list of websites that use this theme](https://github.com/razony
 
 ## Features
 
-- Extreme Fast: [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?url=https://hugo-theme-bootstrap.netlify.app/en/)'s score `95-100`.
+- Fast: [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?url=https://hbs.razonyang.com/en/)'s score `90-100`.
 - Built on top of [Bootstrap 5](https://getbootstrap.com/).
 - Responsive.
 - Various Palettes: `blue`, `blue-gray`, `brown`, `cyan`, `green`, `indigo`, `orange`, `pink`, `purple`, `red`, `teal`, `yellow`.
@@ -33,6 +33,8 @@ There is also a [list of websites that use this theme](https://github.com/razony
 - Search.
 - Breadcrumb.
 - Archive.
+- Image Viewer.
+- Resizing images by adding URL query, such as `width=300px` and `height=200px`.
 - Aligning images by adding URL fragments, such as `#center`, `#floatleft` and `#floatright` represents align center, float left and float right respectively.
 - [Syntax Highlighting](#syntax-highlighting)
 - Resources Lazy Loading: `image` and `iframe`.
@@ -162,9 +164,10 @@ As the example site shown, the configuration are separated into multiple files, 
 | `readingTime` | Boolean | `true` | Whether to display the reading time.
 | `postDate` | Boolean | `true` | Whether to display the post date in the post meta section.
 | `math` | Boolean | `false` | Whether to enable math globally.
-| `logo` | String | `images/logo.webp` | Logo image.
+| `diagram` | Boolean | `false` | Whether to enable diagram globally.
+| `mermaid` | Object | - | [Mermaid Configuration](https://mermaid-js.github.io/mermaid/#/Setup?id=configuration).
+| `logo` | String/Boolean | `images/logo.webp` | Logo image. Disable logo by setting it to `false`.
 | `brand` | String | - | Brand text.
-| `menusPosition` | String | `right` | Menus position: `right`, `left`, `center`.
 | `description` | String | - | Site description.
 | `keywords` | String | - | Site keywords.
 | `color` | String | - | Color mode, `light`, `dark` or dynamic. Default to dynamic.
@@ -176,6 +179,7 @@ As the example site shown, the configuration are separated into multiple files, 
 | `categoryCount` | Integer/Boolean | `10` | The number of categories shown in sidebar. Turn off by setting it to `false`.
 | `tagCount` | Integer/Boolean | `10` | The number of tags shown in sidebar. Turn off by setting it to `false`.
 | `seriesCount` | Integer | `10` | The number of series shown in sidebar.
+| `taxonomyPaginate` | Integer | `10` |
 | `taxonomyPostCount` | Integer | `3` | The number of posts of taxonomy. Turn off by setting it to false.
 | `fullWidth` | Boolean | `false` | Full width.
 | `fixedHeader` | Boolean | `true` | Turn on/off fixed header.
@@ -240,6 +244,8 @@ As the example site shown, the configuration are separated into multiple files, 
 | `post` | Object | - | 
 | `post.excerpt` | String | `Summary` | Options: `description`
 | `post.excerptMaxLength` | Integer | `320` | 
+| **Katex**
+| `katex` | Object | - | Katex options, see also https://katex.org/docs/autorender.html and https://katex.org/docs/options.html
 
 > Except the Google webmaster tool, the other webmaster tools cannot work with `hugo --minify`, because they cannot recognize the minified meta tag.
 
@@ -253,6 +259,7 @@ As the example site shown, the configuration are separated into multiple files, 
 | `comment` | Boolean | `true` | Whether to enable comments. It won't work if `comment` has been disabled globally.
 | `toc` | Boolean | `true` | Whether to enable TOC. It won't work if `toc` has been disabled globally.
 | `math` | Boolean | `false` | Whether to enable math.
+| `diagram` | Boolean | `false` | Whether to enable diagram.
 | `reward` | Boolean | `true` | Whether to enable reward.
 | `breadcrumb` | Boolean | `true` | Whether to enable breadcrumb.
 | `readingTime` | Boolean | `true` | Whether to display the reading time.
@@ -351,6 +358,8 @@ Hooks are used for adding code on pages.
 | `comments-end` | Follow the comments |
 | `footer-begin` | At very top of the footer |
 | `footer-end` | Before the footer end |
+| `post-panel-begin` | At very top of the post panel |
+| `post-panel-end` | Before the post panel end |
 
 For using a hook, you need to create an HTML file named with the hook name in the directory `layouts/partials/hooks`.
 
@@ -406,12 +415,15 @@ github = "githubusername"
 | `qq` | QQ Number |
 | `dockerhub` | Docker Hub Username |
 | `bitbucket` | Bitbucket Workspace ID |
+| `kaggle` | Kaggle Username |
 | `medium` | Medium Username or custom domain(e.g. https://custom.domain.tld) |
 | `lastfm` | Last.fm Username |
 | `bibibili` | BiliBili User ID |
 | `youtube` | Youtube Channel ID |
 | `discord` | Discord Invite Code |
 | `discourse` | Forum URL |
+| `tiktok` | TikTok Username |
+| `pinterest` | Pinterest Username |
 
 ## Contribute
 
@@ -428,6 +440,8 @@ github = "githubusername"
   - Improve documentations.
 
 ### Develop
+
+> Please follow the [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/) before submitting a PR.
 
 This theme relies on `npm` and `webpack` for development. The source of `js` and `scss` are placed in `src` directory.
 
@@ -448,8 +462,7 @@ $ npm run build
 **Preview**
 
 ```shell
-$ cd exampleSite
-$ hugo server --themesDir=../../
+$ npm run serve
 ```
 
 **Formating Code**

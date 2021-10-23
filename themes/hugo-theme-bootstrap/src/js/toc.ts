@@ -1,4 +1,4 @@
-import { Offcanvas } from 'bootstrap';
+import * as Offcanvas from 'bootstrap/js/dist/offcanvas';
 
 class TOC {
   instance: Offcanvas;
@@ -25,4 +25,6 @@ class TOC {
   }
 }
 
-export default TOC;
+document.addEventListener('DOMContentLoaded', () => {
+  (new TOC(document.querySelector('#offcanvasTOC'))).run();
+});

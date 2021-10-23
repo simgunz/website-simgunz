@@ -1,14 +1,21 @@
 const path = require('path');
 const ESLintPlugin = require('eslint-webpack-plugin');
+const TerserPlugin = require("terser-webpack-plugin");
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
     main: './src/js/index.ts',
-    search: ['./src/search/index.ts', './src/search/index.scss'],
+    search: ['./src/search/index.ts'],
     katex: ['./src/katex/index.ts', './src/katex/index.scss'],
+    mermaid: ['./src/mermaid/index.ts'],
   },
   mode: 'production',
+  optimization: {
+    usedExports: true,
+    minimize: true,
+    minimizer: [new TerserPlugin()],
+  },
   output: {
     path: path.resolve(path.join(__dirname, 'assets', 'js')),
     filename: '[name].js'
@@ -65,13 +72,13 @@ module.exports = {
   },
   plugins: [
     new ESLintPlugin(),
-    new CopyPlugin({
-      patterns: [
-        { 
-          from: path.resolve(path.join(__dirname, 'node_modules/@fortawesome/fontawesome-free/webfonts')),
-          to: path.resolve(path.join(__dirname, 'static/fonts')),
-        },
-      ],
-    }),
+    // new CopyPlugin({
+    //   patterns: [
+    //     { 
+    //       from: path.resolve(path.join(__dirname, 'node_modules/@fortawesome/fontawesome-free/webfonts')),
+    //       to: path.resolve(path.join(__dirname, 'static/fonts')),
+    //     },
+    //   ],
+    // }),
   ]
 };

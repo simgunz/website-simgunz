@@ -10,9 +10,9 @@
 
 ![截圖](https://raw.githubusercontent.com/razonyang/hugo-theme-bootstrap/master/images/screenshot.png)
 
-**Dark Mode**
+**Light Mode**
 
-![深色模式下的截圖](https://raw.githubusercontent.com/razonyang/hugo-theme-bootstrap/master/images/screenshot-dark.png)
+![淺色模式下的截圖](https://raw.githubusercontent.com/razonyang/hugo-theme-bootstrap/master/images/screenshot-light.png)
 
 ## 線上預覽
 
@@ -22,7 +22,7 @@
 
 ## 功能特性
 
-- 極快：[Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?url=https://hugo-theme-bootstrap.netlify.app/en/) 分數在 `95-100` 之間
+- 快速：[Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?url=https://hbs.razonyang.com/en/) 分數在 `90-100` 之間
 - 基於 [Bootstrap 5](https://getbootstrap.com/)
 - 響應式
 - 多種配色：`blue`, `blue-gray`, `brown`, `cyan`, `green`, `indigo`, `orange`, `pink`, `purple`, `red`, `teal`, `yellow`
@@ -33,6 +33,8 @@
 - 搜尋
 - 麵包屑導航
 - 歸檔
+- 圖片查看器
+- 可以通過 URL 參數調整圖片大小，比如 `width=300px` 和 `height=200px`
 - 可以通過添加 URL 段實現圖片對齊，比如 `#center`，`#floatleft` 和 `#floatright` 分別表示居中、左浮動和右浮動。
 - 資源延遲載入：支援 `image` 和 `iframe` 等。
 - 打賞掛件：支持支付寶和微信。
@@ -161,9 +163,10 @@ $ hugo new -c content/zh-cn posts/newpost.md
 | `readingTime` | Boolean | `true` | 是否顯示閱讀時間
 | `postDate` | Boolean | `true` | 是否显示发表日期
 | `math` | Boolean | `false` | 是否開啟 `math`。
-| `logo` | String | `images/logo.webp` | Logo
+| `diagram` | Boolean | `false` | 是否開啟 `diagram`。
+| `mermaid` | Object | - | [Mermaid 配置](https://mermaid-js.github.io/mermaid/#/Setup?id=configuration).
+| `logo` | String | `images/logo.webp` | Logo。設置為 `false` 以禁用 Logo。
 | `brand` | String | - | Brand
-| `menusPosition` | String | `right` | 選單位置：`right`, `left`, `center`.
 | `description` | String | - | 站點描述
 | `keywords` | String | - | 站點關鍵詞
 | `color` | String | - | 顏色風格， `light`，`dark` 或者 dynamic（默認）。
@@ -175,6 +178,7 @@ $ hugo new -c content/zh-cn posts/newpost.md
 | `categoryCount` | Integer/Boolean | `10` | 分類數，`false` 則隱藏。
 | `tagCount` | Integer/Boolean | `10` | 標籤數，`false` 則隱藏。
 | `seriesCount` | Integer/Boolean | `10` | 專欄數，`false` 則隱藏。
+| `taxonomyPaginate` | Integer | `10` |
 | `taxonomyPostCount` | Integer | `3` | 分類的文章數，`false` 則隱藏。
 | `fullWidth` | Boolean | `false` | 是否全寬
 | `fixedHeader` | Boolean | `true` | 是否固定頭部
@@ -239,6 +243,8 @@ $ hugo new -c content/zh-cn posts/newpost.md
 | `post` | Object | - | 
 | `post.excerpt` | String | `Summary` | 可選項：`description`
 | `post.excerptMaxLength` | Integer | `320` | 
+| **Katex**
+| `katex` | Object | - | Katex 參數，請參閱 https://katex.org/docs/autorender.html 和 https://katex.org/docs/options.html
 
 > 除了 Google 站長工具外，其他搜索引擎站長工具無法與 `hugo --minify` 同時使用，這是因為它們無法識別優化後的元標簽。
 
@@ -252,6 +258,7 @@ $ hugo new -c content/zh-cn posts/newpost.md
 | `comment` | Boolean | `true` | 是否開啟評論，如果評論已被全域性關閉，該引數無效
 | `toc` | Boolean | `true` | 是否開啟目錄，如果目錄已被全域性關閉，該引數無效
 | `math` | Boolean | `false` | 是否開啟 `math`
+| `diagram` | Boolean | `false` | 是否開啟 `diagram`
 | `reward` | Boolean | `true` | 是否開啟打賞
 | `breadcrumb` | Boolean | `true` | 是否開啟麵包屑導航
 | `poweredBy` | Boolean | `true` | 是否顯示技術支援
@@ -350,6 +357,8 @@ $ echo "MY COMMENTS WIDGET" > layouts/partials/post/comments/custom.html
 | `comments-end` | 評論下方 |
 | `footer-begin` | `footer` 上方 |
 | `footer-end` | `footer` 下方 |
+| `post-panel-begin` | 文章工具欄上方 |
+| `post-panel-end` | 文章工具欄下方 |
 
 要使用鉤子，以鉤子名稱建立一個 HTML 檔案，並儲存到 `layouts/partials/hooks` 目錄即可。
 
@@ -405,12 +414,15 @@ github = "githubusername"
 | `qq` | QQ 號 |
 | `dockerhub` | Docker Hub 使用者名稱 |
 | `bitbucket` | Bitbucket Workspace ID |
+| `kaggle` | Kaggle 使用者名稱 |
 | `medium` | Medium 使用者名稱或自定義域名（比如：https://custom.domain.tld） |
 | `lastfm` | Last.fm 使用者名稱 |
 | `bibibili` | BiliBili 使用者 ID |
 | `youtube` | Youtube 頻道 ID |
 | `discord` | Discord 邀請碼 |
 | `discourse` | 論壇 URL |
+| `tiktok` | TikTok 使用者名稱 |
+| `pinterest` | Pinterest 使用者名稱 |
 
 ## 貢獻
 
@@ -425,6 +437,8 @@ github = "githubusername"
   - 完善文件
 
 ### 開發
+
+> 在提交 PR 之前，請遵循[常規提交規範](https://www.conventionalcommits.org/en/v1.0.0/)。
 
 本主題依賴於 `npm` 和 `webpack` 進行開發，原始碼目錄為 `src`。
 
@@ -445,8 +459,7 @@ $ npm run build
 **預覽**
 
 ```shell
-$ cd exampleSite
-$ hugo server --themesDir=../../
+$ npm run serve
 ```
 
 **格式化代碼**
