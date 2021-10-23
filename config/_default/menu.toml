@@ -5,15 +5,6 @@
   weight = 40
 
 [[main]]
-  id = "redshift-plasmoid"
-  weight = 80
-  parent = "projects"
-  name = "Redshift Plasmoid"
-  pre = '<div class="dropdown-item-inner"><img src="/images/project-icons/redshift.png"></img>'
-  post = '</div>'
-  url = 'projects/redshift-plasmoid'
-
-[[main]]
   id = "anki-addons"
   weight = 60
   parent = "projects"
@@ -30,6 +21,15 @@
   pre = '<div class="dropdown-item-inner"><img src="/images/project-icons/tampermonkey.svg"></img>'
   post = '</div>'
   url = 'https://github.com/simgunz/userscripts'
+
+[[main]]
+  id = "redshift-plasmoid"
+  weight = 80
+  parent = "projects"
+  name = "Redshift Plasmoid"
+  pre = '<div class="dropdown-item-inner"><img src="/images/project-icons/redshift.png"></img>'
+  post = '</div>'
+  url = 'projects/redshift-plasmoid'
 
 [[main]]
   id = 'legacy-projects'
