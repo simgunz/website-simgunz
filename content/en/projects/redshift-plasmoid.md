@@ -22,12 +22,12 @@ Redshift adjusts the color temperature of the screen trying to match that of the
 
 Many researches have been able to prove that the exposure to the bright light emitted by electronic devices like computer monitors, smartphones and tablets during the night, can lead to sleep disorders. The blue undertone, even if not directly perceived, is associated by the human body with daytime. This abnormal exposure to blue light during the night can make us more alert and improve our response times. It also has been shown that it suppresses melatonin, a hormone that regulates the sleep-wake cycle.
 
-# Downloads {#downloads}
+# Downloads
 
 [GitHub](https://github.com/simgunz/redshift-plasmoid)
 
-# Screenshots {#screenshots}
+# Screenshots
 
-# References {#references}
+# References
 
 The Redshift daemon is developed by Jon Lund Steffensen (http://jonls.dk/redshift/)
