@@ -7,3 +7,9 @@
   parent = "dropdown"
   name = "Github"
   url = "https://github.com/razonyang/hugo-theme-bootstrap"
+  pre = '<i class="fab fa-fw fa-github"></i>'
+[[main]]
+  id = "manual"
+  parent = "dropdown"
+  name = "用户手册"
+  url = "zh-cn/series/manual"

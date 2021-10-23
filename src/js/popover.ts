@@ -1,4 +1,4 @@
-import { Popover as BasePopover } from 'bootstrap';
+import  * as BasePopover  from 'bootstrap/js/dist/popover';
 
 class PopOver {
   static run() {
@@ -7,4 +7,6 @@ class PopOver {
   }
 }
 
-export default PopOver;
+document.addEventListener('DOMContentLoaded', () => {
+  PopOver.run();
+});

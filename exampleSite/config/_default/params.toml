@@ -7,8 +7,8 @@ keywords = "Hugo, Bootstrap, Blog Theme"
 # images = ["site-feature-image.jpg"]
 
 # logo = "images/logo.png" # Logo image. Default to "images/logo.webp".
+# logo = false # Disable Logo
 brand = "BOOTSTRAP"
-# menusPosition = "left" # Menus position: right(default), left or center.
 
 palette = "blue" # Default palette. Optional.
 # palettes = ["blue", "blue gray", "brown"] # Available palettes. Default to ALL.
@@ -27,6 +27,7 @@ googleAdsense = ""
 # math = true # Enable math globally.
 # toc = false # Disable TOC globally.
 # breadcrumb = false # Disable breadcrumb
+# diagram = true
 
 # poweredBy = false # Whether to show powered by.
 
@@ -39,11 +40,14 @@ googleAdsense = ""
 # categoryCount = 10 # The number of categories shown in sidebar. Turn off by setting it to false.
 # tagCount = 10 # The number of tags shown in sidebar. Turn off by setting it to false.
 # seriesCount = 10 # The number of series shown in sidebar. Turn off by setting it to false.
+taxonomyPaginate = 5 # Default to 10.
 # taxonomyPostCount = 5 # The number of posts of taxonomy. Turn off by setting it to false.
 
 # Custom CSS and JS
-customCSS = []
-customJS = []
+customCSS = [
+]
+customJS = [
+]
 
 # tocWordCount = 280 # TOC is displayed only if the post's word count exceeds this value.
 
@@ -113,3 +117,45 @@ titleCase = true # Capitalized title.
   # small = ".9rem"
   # large = "1.1rem"
   # extraLarge = "1.2rem"
+  
+# Katex options, see also https://katex.org/docs/autorender.html and https://katex.org/docs/options.html
+[katex]
+  [[katex.delimiters]]
+    left = "$$"
+    right = "$$"
+    display = true
+  [[katex.delimiters]]
+    left = "$"
+    right = "$"
+    display = false
+  [[katex.delimiters]]
+    left = "\\("
+    right = "\\)"
+    display = false
+  [[katex.delimiters]]
+    left = "\\begin{equation}"
+    right = "\\end{equation}"
+    display = true
+  [[katex.delimiters]]
+    left = "\\begin{align}"
+    right = "\\end{align}"
+    display = true
+  [[katex.delimiters]]
+    left = "\\begin{alignat}"
+    right = "\\end{alignat}"
+    display = true
+  [[katex.delimiters]]
+    left = "\\begin{gather}"
+    right = "\\end{gather}"
+    display = true
+  [[katex.delimiters]]
+    left = "\\begin{CD}"
+    right = "\\end{CD}"
+    display = true
+  [[katex.delimiters]]
+    left = "\\["
+    right = "\\]"
+    display = true
+
+[mermaid] # See https://mermaid-js.github.io/mermaid/#/Setup?id=configuration
+  theme = "dark"

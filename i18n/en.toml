@@ -7,6 +7,9 @@ other = "Alipay"
 [archives]
 other = "Archives"
 
+[buy_me_a_coffee]
+other = "Buy me a coffee"
+
 [categories]
 other = "Categories"
 
@@ -77,6 +80,15 @@ other = "Palette"
 one = "{{ .Count }} post in total"
 other = "{{ .Count }} posts in total"
 
+[post_created_on]
+other = "created on"
+
+[post_reading_time]
+other = "reading time"
+
+[post_updated_on]
+other = "updated on"
+
 [reading_time]
 other = "{{ .ReadingTime }} min read"
 
@@ -85,9 +97,6 @@ other = "Recent Posts"
 
 [related_posts]
 other = "Related Posts"
-
-[reward]
-other = "Reward"
 
 [search]
 other = "Search"

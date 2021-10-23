@@ -1,81 +1,74 @@
 .navbar {
-  background-color: var(--hbs-navbar-bg);
-  color: #{$white-secondary};
+  background-color: variable('navbar');
+  color: variable('primary-text-on-navbar');
 
   a {
     &:hover,
     &:focus,
     &:active,
     &.active {
-      color: #{$white};
+      color: variable('accent-text-on-navbar');
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 8px;
     }
   }
-}
 
-.search-bar {
-  .form-control {
-    background-color: var(--hbs-background);
-    border-color: var(--hbs-background);
-    color: var(--hbs-secondary-text);
-    padding-left: 2rem;
-
+  .btn {
+    &:hover,
     &:focus {
-      color: var(--hbs-primary-text);
+      color: variable('on-primary');
     }
   }
 
-  .btn-search {
-    background-color: transparent;
-    color: var(--hbs-secondary-text);
-    z-index: 4 !important;
+  .btn-back {
+    @extend .navbar-toggler;
   }
-}
-
-.logo {
-  height: 26px;
-  margin-right: 0.5rem;
 }
 
 .navbar-toggler {
+  color: inherit;
   border: none;
 
   &:focus {
     box-shadow: none;
   }
+
+  &:hover {
+    color: variable('accent-text-on-navbar');
+  }
 }
 
-$bgNavbarTogglerIcon: url("/images/icons/menu.png");
+.logo {
+  height: 26px;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+$bgNavbarTogglerIcon: url('/images/icons/menu.png');
 
 .navbar-toggler-icon {
   background-image: $bgNavbarTogglerIcon;
 }
 
 .nav-link {
-  color: var(--hbs-primary-tex);
+  color: inherit;
 
-  &:focus {
-    outline: none;
-    color: var(--hbs-accent);
-  }
-
+  &:focus,
   &:hover {
     outline: none;
-    color: var(--hbs-accent);
+    color: variable('accent');
+    text-decoration: none;
   }
 }
 
-.dropdown-menu {
-  background-color: var(--hbs-surface);
+.navbar-brand {
+  color: inherit;
+  text-decoration: none !important;
+}
 
-  .dropdown-item {
-    color: var(--hbs-on-surface);
+.navbar-settings, .navbar-social-share {
+  @extend .navbar-toggler;
 
-    &:hover,
-    &:focus,
-    &:active,
-    &.active {
-      color: #fff;
-      background-color: var(--hbs-accent);
-    }
-  }
+  display: inline !important;
 }

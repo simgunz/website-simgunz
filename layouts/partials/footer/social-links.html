@@ -15,46 +15,41 @@
 {{- $qq := dict "qq" (dict "url" "http://wpa.qq.com/msgrd?v=3&uin=%s&site=qq&menu=yes" "title" "QQ") -}}
 {{- $dockerhub := dict "dockerhub" (dict "url" "https://hub.docker.com/u/%s" "icon" "fab fa-docker" "title" "Docker Hub") -}}
 {{- $bitbucket := dict "bitbucket" (dict "url" "https://bitbucket.org/%s") -}}
+{{- $kaggle := dict "kaggle" (dict "url" "https://kaggle.com/%s") -}}
 {{- $youtube := dict "youtube" (dict "url" "https://www.youtube.com/channel/%s" "icon" "fab fa-youtube") -}}
 {{- $discord := dict "discord" (dict "url" "https://discord.com/invite/%s" "icon" "fab fa-discord") -}}
 {{- $discourse := dict "discourse" (dict "url" "%s" "icon" "fab fa-discourse") -}}
 {{- $items := merge $github $gitlab $twitter $facebook $facebookGroup $linkedin $stackoverflow $weibo $zhihu $quora $instagram $discourse $discord $youtube -}}
 {{- $lastfm := dict "lastfm" (dict "url" "https://www.last.fm/user/%s" "title" "Last.fm") -}}
 {{- $bilibili := dict "bilibili" (dict "url" "https://space.bilibili.com/%s" "title" "bilibili" "icon" "fas fa-tv") -}}
-{{- $items = merge $items $tumblr $reddit $telegram $qq $dockerhub $bitbucket $lastfm $bilibili -}}
+{{- $tiktok := dict "tiktok" (dict "url" "https://www.tiktok.com/@%s" "title" "TikTok" "icon" "fab fa-tiktok") -}}
+{{- $pinterest := dict "pinterest" (dict "url" "https://www.pinterest.com/%s" "icon" "fab fa-pinterest") -}}
+{{- $items = merge $items $tumblr $reddit $telegram $qq $dockerhub $bitbucket $kaggle $lastfm $bilibili $tiktok $pinterest -}}
 <nav class="social-links nav my-2 justify-content-center">
 {{- range $key, $user := .Site.Social -}}
   {{- if eq $key "email" -}}
-  <li class="nav-item">
     <a class="nav-link social-link" href="mailto:{{ $user }}" title="{{ title $key }}">
       <i class="fas fa-fw fa-2x fa-envelope"></i>
     </a>
-  </li>
   {{- else if eq $key "medium" -}}
     {{- $url := urls.Parse $user -}}
     {{- if eq $url.Host "" -}}
       {{- $url = printf "https://medium.com/@%s" $user | urls.Parse -}}
     {{- end -}}
-    <li class="nav-item">
-      <a class="nav-link social-link" target="_blank" href="{{ $url.String }}" title="Medium">
+      <a class="nav-link social-link" target="_blank" href="{{ $url.String }}" title="Medium" rel="noopener noreferrer">
         <i class="fab fa-fw fa-2x fa-medium-m"></i>
       </a>
-    </li>
   {{- else -}}
     {{- with index $items $key -}}
-    <li class="nav-item">
-      <a class="nav-link social-link" target="_blank" href="{{ printf .url $user }}" title="{{ default (title $key) .title }}">
+      <a class="nav-link social-link" target="_blank" href="{{ printf .url $user }}" title="{{ default (title $key) .title }}" rel="noopener noreferrer">
         <i class="fa-fw fa-2x {{ default ( printf "fab fa-%s" $key ) .icon }}"></i>
       </a>
-    </li>
     {{- end -}}
   {{- end -}}
 {{- end -}}
   {{- with .OutputFormats.Get "rss" -}}
-  <li class="nav-item">
-    <a class="nav-link social-link" target="_blank" href="{{ .Permalink }}" title="RSS">
+    <a class="nav-link social-link" target="_blank" href="{{ .Permalink }}" title="RSS" rel="noopener noreferrer">
       <i class="fas fa-fw fa-2x fa-rss"></i>
     </a>
-  </li>
   {{- end -}}
 </nav>

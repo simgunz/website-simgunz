@@ -1,3 +1,8 @@
-$form-range-thumb-bg: var(--hbs-accent);
-$fa-font-path: "../fonts";
+$variable-prefix: hbs-;
+
+$form-range-thumb-bg: var(--#{$variable-prefix}accent);
+
 $enable-smooth-scroll: false;
+
+$colors: ();
+$theme-colors: ();

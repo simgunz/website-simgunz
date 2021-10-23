@@ -1,10 +1,7 @@
 class ModeSwitcher {
   public key: string = 'hbs-mode';
 
-  utterances: any;
-
   constructor(public element: HTMLInputElement) {
-    this.utterances = window.params.utterances;
   }
 
   run() {
@@ -49,38 +46,18 @@ class ModeSwitcher {
 
   setMode(value: string) {
     console.debug(`Switch to ${value} mode`);
-    document.body.classList.remove(`mode-${this.getMode()}`);
-    document.body.classList.add(`mode-${value}`);
+    document.body.parentElement.setAttribute('data-mode', value);
     let checked: boolean = false;
     if (value === 'dark') {
       checked = true;
     }
     this.element.checked = checked;
     localStorage.setItem(this.key, value);
-    this.rerenderComments(value);
-  }
-
-  rerenderComments(mode: string) {
-    if (!this.utterances.repo) {
-      return;
-    }
-    if (this.utterances.theme !== '') {
-      return;
-    }
-    const comments = document.querySelector('.post-comments');
-    if (!comments) {
-      return;
-    }
-
-    const js = document.createElement('script');
-    js.setAttribute('src', 'https://utteranc.es/client.js');
-    js.setAttribute('repo', this.utterances.repo);
-    js.setAttribute('issue-term', this.utterances.issueTerm);
-    js.setAttribute('theme', mode === 'dark' ? 'github-dark' : 'github-light');
-    const clone = comments.cloneNode(false);
-    clone.appendChild(js);
-    comments.parentNode.replaceChild(clone, comments);
+    const event = new CustomEvent('hbs:mode', {'detail': {'mode': value}});
+    document.dispatchEvent(event);
   }
 }
 
-export default ModeSwitcher;
+document.addEventListener('DOMContentLoaded', () => {
+  (new ModeSwitcher(document.querySelector('#modeSwitcher'))).run();
+});
