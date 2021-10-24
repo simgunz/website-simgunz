@@ -5,6 +5,7 @@ date = "2021-08-22"
 author = "Simone Gaiarin"
 postDate = false
 readingTime = true
+images = [ "images/feature/redshift_large.jpg" ]
 +++
 
 Redshift Plasmoid provides a graphical configuration interface to redshift, and it allows the user to start/stop the redshift daemon. The program automatically retrieves the user coordinates from the KDE settings, permitting redshift to determine the current position of the sun, needed to perform the color regulation.

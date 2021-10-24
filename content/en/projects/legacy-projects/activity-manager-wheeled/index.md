@@ -5,6 +5,7 @@ date = "2021-08-22"
 author = "Simone Gaiarin"
 postDate = false
 readingTime = true
+images = [ "images/feature/activities_wide.jpg" ]
 
 +++
 
