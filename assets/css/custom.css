@@ -7,3 +7,7 @@
     width: 1.25em;
     margin-right: 0.25rem;
 }
+
+.image-viewer .modal-body img {
+    max-width: none;
+}
