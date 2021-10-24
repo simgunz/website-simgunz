@@ -13,15 +13,13 @@ In a [previous post][1] I've discussed about two problems of the Fluent Forever 
 The basic idea is to create an Anki add-on that automatically searches and downloads all the media we need to create our cards.<!--more-->In particular it should be able to:
 
   1. Using an image service like Google images or Bing images, load an image gallery directly into the Anki card editor so that the user can choose the image that better describe the current word just clicking on it.
-  2. Using a word pronunciation service (e.g. <a title="Forvo" href="http://forvo.com" target="_blank">forvo.com</a>), load a "gallery" of the available pronunciations of the current word in the target language.
+  2. Using a word pronunciation service (e.g. [forvo.com](https://forvo.com)), load a "gallery" of the available pronunciations of the current word in the target language.
   3. Using on line dictionaries, load a "gallery" of the possible IPA transcriptions. Multiple transcriptions may be available for various reasons. As an example different services may have slightly different transcriptions due to different conventions, like using a more strict IPA transcription which uses more diacritics or they can provide General American and Received Pronunciation transcriptions in the case of English.
   4. Preload all the media for the next words in order to minimize the creation time of each card.
 
 In the following video you can see a semi-working mock up of this add-on with explanations, and in the [appendix][2] of this post there are two other videos which compare the current card creation workflow to the workflow using the add on.
 
-
-
-&nbsp;
+{{< youtube ow71P1978h8 >}}
 
 ## Issues and possible solutions
 
@@ -49,7 +47,7 @@ Unfortunately not all the cards are easy to build like the ones shown in the vid
 #### Possible solutions
 
   1. Automatically filter noise (I'm working on some code which do this, and the results are not bad).
-  2. Automatically request a pronunciation for the given word or open a page to do it in services like [forvo.com][3] or <a title="Rhinospike" href="http://rhinospike.com" target="_blank">rhinospike.com</a>
+  2. Automatically request a pronunciation for the given word or open a page to do it in services like [forvo.com](https://forvo.com) or [rhinospike](https://rhinospike.com).
 
 ### IPA gallery
 
@@ -88,8 +86,6 @@ With this post I've provided an overview of my ideas on the add-on implementatio
 ## Appendix: Card creation workflows comparison {#appendix}
 
 {{< youtube 714nh-gg140 >}}
-
-&nbsp;
 
 {{< youtube hlKeHOViOaU >}}
 
