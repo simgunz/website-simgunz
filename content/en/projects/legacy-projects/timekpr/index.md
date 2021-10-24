@@ -28,6 +28,9 @@ To enable this function for a user, the sudo user privilege should be written in
 
 ## Screenshots
 
+![Redshift screenshot 1](images/timekpr-scr-1.jpg#center)
+![Redshift screenshot 1](images/timekpr-scr-1.jpg#center)
+
 ## References
 
 Timekpr was originally developed by Even Nedberg (https://launchpad.net/timekpr)
