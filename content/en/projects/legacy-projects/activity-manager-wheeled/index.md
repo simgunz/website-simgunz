@@ -20,6 +20,8 @@ I've tried to rewrite the application from scratch in QML to improve it and to a
 
 ## Screenshots
 
+![Activity manager screenshot 1](images/activity-manager-scr-1.jpg#center)
+
 ## References
 
 The original Activity Manager was developed by Abdurrahman Avci
