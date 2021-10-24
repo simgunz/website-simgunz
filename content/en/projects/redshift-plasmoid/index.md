@@ -4,7 +4,7 @@ description = "KDE plasma widget to interact with redshift"
 date = "2021-08-22"
 author = "Simone Gaiarin"
 postDate = false
-readingTime = true
+readingTime = false
 images = [ "images/feature/redshift_large.jpg" ]
 +++
 

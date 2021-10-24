@@ -4,7 +4,7 @@ description = ""
 date = "2021-08-22"
 author = "Simone Gaiarin"
 postDate = false
-readingTime = true
+readingTime = false
 images = [ "images/feature/timekpr.jpg" ]
 
 +++
