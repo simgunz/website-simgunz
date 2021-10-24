@@ -14,7 +14,7 @@ In the current version of Activity Manager I've only added the support to change
 
 I've tried to rewrite the application from scratch in QML to improve it and to add some missing features, like the ability to add a new activity from template, but the lack of public API on the class required to fully control the KDE activities has made impossible to complete the work.
 
-## Downloads {#screenshots}
+## Downloads
 
 [GitHub](https://github.com/simgunz/activitymanager-wheeled)
 
