@@ -105,8 +105,8 @@ titleCase = true # Capitalized title.
   # alipay = "images/reward/alipay.png"
   # wechat = "images/reward/wechat.png"
 
-#[share]
-  #addThis = "" # AddThis pubid.
+[share]
+  addThis = "ra-5120ac3568b01c49" # AddThis pubid.
 
 [fontSize] # Comment or remove this settings to disable font size switcher.
   # extraSmall = ".8rem"
