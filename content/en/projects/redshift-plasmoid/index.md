@@ -28,6 +28,9 @@ Many researches have been able to prove that the exposure to the bright light em
 
 # Screenshots
 
+![Redshift screenshot 1](images/redshift-scr-1.jpg#center)
+![Redshift screenshot 2](images/redshift-scr-2.jpg#center)
+![Redshift screenshot 3](images/redshift-scr-3.jpg#center)
 # References
 
 The Redshift daemon is developed by Jon Lund Steffensen (http://jonls.dk/redshift/)
