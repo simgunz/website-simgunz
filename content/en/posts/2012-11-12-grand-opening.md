@@ -5,7 +5,6 @@ date: 2012-11-12T20:27:36+00:00
 images:
   - /images/feature/grand-opening.jpg
 categories:
-  - General
 
 ---
 Finally, after a lot of hard work simgunz's Blog is up and running.

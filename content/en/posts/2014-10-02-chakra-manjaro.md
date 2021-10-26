@@ -5,7 +5,6 @@ date: 2014-10-02T16:42:59+00:00
 images:
   - /images/feature/manjaro_logo.jpg
 categories:
-  - General
 ---
 I've recently moved from Chakra Linux to Manjaro Linux. Here I'm not going to explain why Manjaro and all the Arch-based distro are so fantastic, but I only want to point out why for me Manjaro it's a better choice than Chakra.<!--more-->
 

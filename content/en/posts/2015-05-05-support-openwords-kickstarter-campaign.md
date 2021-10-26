@@ -5,7 +5,6 @@ date: 2015-05-05T15:52:35+00:00
 images:
   - /images/feature/openwords.jpg
 categories:
-  - General
 ---
 Few days ago I've found an interesting project on Kickstarter called [OpenWords](http://openwords.com/). It is a learning language app based on open data, mined from Wikitionary and other resources. The aim of the project is to provide a more general tool for language learning which will cover the majority of the languages in the world.<!--more-->
 

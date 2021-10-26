@@ -5,7 +5,6 @@ date: 2015-12-05T14:21:14+00:00
 images:
   - /images/feature/robochameleon.jpg
 categories:
-  - General
 
 ---
 [Robochameleon][1] is a coding framework and component library for simulation and experimental analysis of optical communication systems. It has been developed by the members of the DSP section of the [High Speed Optical Communication][2] group of the Technical University of Denmark (DTU), which I'm currently part of. <!--more-->The framework library includes models for many standard optical components used to build coherent and incoherent optical communication systems and also different DSP blocks to perform data analysis.
