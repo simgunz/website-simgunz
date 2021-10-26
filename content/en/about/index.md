@@ -1,6 +1,6 @@
 +++
 title = "About"
-description = "Hugo, the world's fastest framework for building websites"
+description = "About page of Simone Gaiarin"
 date = "2021-08-22"
 aliases = ["about-us",  "contact"]
 author = "Simone Gaiarin"
@@ -8,7 +8,7 @@ postDate = false
 readingTime = false
 +++
 
-My name is Simone Gaiarin, and I am a post-doc in optical communications engineering. I am a open-source enthusiast and a free-time programmer. I started using GNU/Linux in 2006 and quickly began to enjoy it. In time, I began to hack around with the system, writing scripts and finally I begin to program non-hello-world software. Now I contribute to the KDE project. I also have many computer unrelated interests, such as reading, hiking, traveling, experimenting, and in general I am always looking to learn new things and try new experiences.
+My name is Simone Gaiarin and I am telecommunications engineer, software developer, and an open-source enthusiast. I started using GNU/Linux in 2006 and quickly began to enjoy it. In time, I began to hack around with the system, writing scripts and finally I begin to program non-hello-world software. Now I contribute to the KDE project. I also have many computer unrelated interests, such as reading, hiking, traveling, experimenting, and in general I am always looking to learn new things and try new experiences.
 
 ## The site
 
