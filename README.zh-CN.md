@@ -4,7 +4,7 @@
 [简体中文](https://github.com/razonyang/hugo-theme-bootstrap/blob/master/README.zh-CN.md) · 
 [繁體中文](https://github.com/razonyang/hugo-theme-bootstrap/blob/master/README.zh-TW.md)
 
-一个极快、响应式和功能丰富的 Hugo 博客主题。
+一个快速、响应式和功能丰富的 Hugo 博客主题。
 
 ## 截图
 
@@ -33,7 +33,7 @@
 - 搜索
 - 面包屑导航
 - 归档
-- 图片查看器
+- [图片浏览器](#图片浏览器)
 - 可以通过 URL 参数调整图片大小，比如 `width=300px` 和 `height=200px`
 - 可以通过添加 URL 段实现图片对齐，比如 `#center`, `#floatleft` 和 `#floatright` 分别表示居中、左浮动和右浮动。
 - 资源延迟加载：支持 `image` 和 `iframe` 等。
@@ -47,6 +47,7 @@
 - [多样的短代码](#短代码)
 - [Twitter Cards](https://gohugo.io/templates/internal/#configure-twitter-cards) 和 [Open Graph](https://gohugo.io/templates/internal/#configure-open-graph)
 - [知识许可共享协议](https://creativecommons.org/licenses/)
+- Netlify 联系表单
 
 ## 安装
 
@@ -164,7 +165,6 @@ $ hugo new -c content/zh-cn posts/newpost.md
 | `postDate` | Boolean | `true` | 是否显示发表日期
 | `math` | Boolean | `false` | 是否开启 `math`。
 | `diagram` | Boolean | `false` | 是否开启 `diagram`。
-| `mermaid` | Object | - | [Mermaid 配置](https://mermaid-js.github.io/mermaid/#/Setup?id=configuration).
 | `logo` | String/Boolean | `images/logo.webp` | Logo。设置为 `false` 以禁用 Logo。
 | `brand` | String | - | Brand
 | `description` | String | - | 站点描述
@@ -243,8 +243,8 @@ $ hugo new -c content/zh-cn posts/newpost.md
 | `post` | Object | - | 
 | `post.excerpt` | String | `Summary` | 可选项：`description`
 | `post.excerptMaxLength` | Integer | `320` | 
-| **Katex**
-| `katex` | Object | - | Katex 参数，请参阅 https://katex.org/docs/autorender.html 和 https://katex.org/docs/options.html
+| **Image Viewer**
+| `viewer` | Boolean | true | 是否启用图片浏览器
 
 > 除了 Google 站长工具外，其他搜索引擎站长工具无法与 `hugo --minify` 同时使用，这是因为它们无法识别优化后的元标签。
 
@@ -367,6 +367,22 @@ $ echo "MY COMMENTS WIDGET" > layouts/partials/post/comments/custom.html
 ```shell
 $ echo "SIDEBAR BEGIN" > layouts/partials/hooks/sidebar-begin.html
 ```
+
+## 图片浏览器
+
+图片浏览器默认启用，你可以通过设置 `viewer` 参数为 `false` 以关闭该功能。
+
+### 选项
+
+```js
+// assets/js/viewer.config.js
+window.viewerOptions = {
+    className: "image-viewer",
+    // ...
+};
+```
+
+[Viewer.js Options](https://github.com/fengyuanchen/viewerjs#options) 列出了可用的选项。
 
 ## 短代码
 

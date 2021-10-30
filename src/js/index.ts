@@ -4,7 +4,6 @@ import 'bootstrap/js/dist/offcanvas';
 import 'bootstrap/js/dist/popover';
 import 'bootstrap/js/dist/modal';
 import 'bootstrap/js/dist/tab';
-import './utterances';
 import './mode';
 import './palette';
 import './scroller';
@@ -16,7 +15,7 @@ import './code';
 import './sidebar-toggler';
 import './popover';
 import './fonts';
-import './image-viewer';
+import './form-validator';
 
 declare global {
   interface Window {

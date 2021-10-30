@@ -4,7 +4,7 @@
 [简体中文](https://github.com/razonyang/hugo-theme-bootstrap/blob/master/README.zh-CN.md) · 
 [繁體中文](https://github.com/razonyang/hugo-theme-bootstrap/blob/master/README.zh-TW.md)
 
-An extreme fast, responsive and feature-rich blog theme for Hugo.
+A fast, responsive and feature-rich blog theme for Hugo.
 
 ## Screenshots
 
@@ -33,7 +33,7 @@ There is also a [list of websites that use this theme](https://github.com/razony
 - Search.
 - Breadcrumb.
 - Archive.
-- Image Viewer.
+- [Image Viewer](#image-viewer).
 - Resizing images by adding URL query, such as `width=300px` and `height=200px`.
 - Aligning images by adding URL fragments, such as `#center`, `#floatleft` and `#floatright` represents align center, float left and float right respectively.
 - [Syntax Highlighting](#syntax-highlighting)
@@ -48,6 +48,7 @@ There is also a [list of websites that use this theme](https://github.com/razony
 - [Various Shortcodes](#shortcodes).
 - [Twitter Cards](https://gohugo.io/templates/internal/#configure-twitter-cards) and [Open Graph](https://gohugo.io/templates/internal/#configure-open-graph).
 - [Creative Commons License](https://creativecommons.org/licenses/)
+- Netlify Contact Form
 
 ## Installation
 
@@ -165,7 +166,6 @@ As the example site shown, the configuration are separated into multiple files, 
 | `postDate` | Boolean | `true` | Whether to display the post date in the post meta section.
 | `math` | Boolean | `false` | Whether to enable math globally.
 | `diagram` | Boolean | `false` | Whether to enable diagram globally.
-| `mermaid` | Object | - | [Mermaid Configuration](https://mermaid-js.github.io/mermaid/#/Setup?id=configuration).
 | `logo` | String/Boolean | `images/logo.webp` | Logo image. Disable logo by setting it to `false`.
 | `brand` | String | - | Brand text.
 | `description` | String | - | Site description.
@@ -243,9 +243,9 @@ As the example site shown, the configuration are separated into multiple files, 
 | **Post** 
 | `post` | Object | - | 
 | `post.excerpt` | String | `Summary` | Options: `description`
-| `post.excerptMaxLength` | Integer | `320` | 
-| **Katex**
-| `katex` | Object | - | Katex options, see also https://katex.org/docs/autorender.html and https://katex.org/docs/options.html
+| `post.excerptMaxLength` | Integer | `320` |
+| **Image Viewer**
+| `viewer` | Boolean | true | Turn on/off image viewer.
 
 > Except the Google webmaster tool, the other webmaster tools cannot work with `hugo --minify`, because they cannot recognize the minified meta tag.
 
@@ -368,6 +368,22 @@ For example:
 ```shell
 $ echo "SIDEBAR BEGIN" > layouts/partials/hooks/sidebar-begin.html
 ```
+
+## Image Viewer
+
+Image Viewer was turned on by default, you can turn it off by setting the parameter `viewer` as `false`.
+
+### Options
+
+```js
+// assets/js/viewer.config.js
+window.viewerOptions = {
+    className: "image-viewer",
+    // ...
+};
+```
+
+Avialable options are listed on [Viewer.js Options](https://github.com/fengyuanchen/viewerjs#options).
 
 ## Shortcodes
 
