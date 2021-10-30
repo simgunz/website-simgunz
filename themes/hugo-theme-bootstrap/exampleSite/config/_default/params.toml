@@ -53,6 +53,8 @@ customJS = [
 
 titleCase = true # Capitalized title.
 
+viewer = true # Image Viewer
+
 [codeBlock]
   # maxLines = 8
   lineNos = false # true/false represents that show/hide the line numbers by default.
@@ -108,6 +110,9 @@ titleCase = true # Capitalized title.
 [reward]
   alipay = "images/reward/alipay.png"
   wechat = "images/reward/wechat.png"
+  #paypal = "images/reward/paypal.png"
+  #patreon = "images/reward/patreon.png"
+  #liberapay = "images/reward/liberapay.png"
 
 #[share]
   #addThis = "" # AddThis pubid.
@@ -117,45 +122,3 @@ titleCase = true # Capitalized title.
   # small = ".9rem"
   # large = "1.1rem"
   # extraLarge = "1.2rem"
-  
-# Katex options, see also https://katex.org/docs/autorender.html and https://katex.org/docs/options.html
-[katex]
-  [[katex.delimiters]]
-    left = "$$"
-    right = "$$"
-    display = true
-  [[katex.delimiters]]
-    left = "$"
-    right = "$"
-    display = false
-  [[katex.delimiters]]
-    left = "\\("
-    right = "\\)"
-    display = false
-  [[katex.delimiters]]
-    left = "\\begin{equation}"
-    right = "\\end{equation}"
-    display = true
-  [[katex.delimiters]]
-    left = "\\begin{align}"
-    right = "\\end{align}"
-    display = true
-  [[katex.delimiters]]
-    left = "\\begin{alignat}"
-    right = "\\end{alignat}"
-    display = true
-  [[katex.delimiters]]
-    left = "\\begin{gather}"
-    right = "\\end{gather}"
-    display = true
-  [[katex.delimiters]]
-    left = "\\begin{CD}"
-    right = "\\end{CD}"
-    display = true
-  [[katex.delimiters]]
-    left = "\\["
-    right = "\\]"
-    display = true
-
-[mermaid] # See https://mermaid-js.github.io/mermaid/#/Setup?id=configuration
-  theme = "dark"
