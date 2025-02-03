@@ -2,3 +2,8 @@
   languageName = "English"
   weight = 1
   contentDir = "content/en"
+
+[it]
+  languageName = "Italiano"
+  weight = 2
+  contentDir = "content/it"
