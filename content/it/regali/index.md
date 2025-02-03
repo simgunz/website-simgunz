@@ -8,27 +8,16 @@ comment: false
 toc: true
 reward: false
 categories: ["personal"]
-tags: ["wishlist", "regali"]
+tags: ["regali"]
 #sitemap:
 #  disable: true
 ---
 
-## Perché una lista dei desideri?
+Ho creato questa lista per facilitare la scelta di regali che mi piaceranno davvero, evitando sprechi di risorse e denaro. Qualche piccola nota:
 
-Questa lista nasce con l'intento di:
-- Evitare regali che potrebbero finire inutilizzati
-- Ridurre lo spreco di risorse e denaro
-- Facilitare la scelta di un regalo davvero apprezzato
+- Non sentirti obbligato a fare un regalo
+- Amo gli oggetti di seconda mano! Ridanno vita a cose esistenti ed evitano sprechi
+- Non è importante quanto spendi: anche un piccolo pensiero ha grande valore
+- Un singolo regalo è perfetto, non serve prenderne diversi
 
-## Oggetti
-
-- [Kit di grimaldelli](https://www.southord.com/collections/lock-pick-sets-slimline-euro/products/lock-pick-set-slim-line-fifteen-piece-1500) 💰💰
-- [Joypad Pro Controller (nero) per Nintendo Switch](https://amzn.eu/d/j8ho6Oz) 💰💰💰
-
-### Libri
-
-- [The extended selfish gene](https://amzn.eu/d/6Rlne8Q) 💰
-
-### Esperienze
-
-- [Corso di panificazione](https://www.hangar78.com/events/pizza-e-pane-scopri-le-tecniche-tradizionali-per-lievitati-in-casa/)
+[**>>>>>>>> VAI ALLA LISTA <<<<<<<<**](https://mywishlist.online/w/eyscen/simones-wishlist)
