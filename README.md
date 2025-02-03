@@ -1,3 +1,13 @@
+## Setup
+
+```bash
+export PATH=$PATH:/media/data/development/web/website-simgunz/hugo_0.87.0_Linux-64bit/
+```
+
+
+
+---
+
 - Update the theme
 
 ```bash
